@@ -1,0 +1,190 @@
+<!-- @format -->
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="./Style/CSS/main.css" />
+		<script
+			src="https://kit.fontawesome.com/be9deee39d.js"
+			crossorigin="anonymous"
+		></script>
+		<script
+			src="https://code.jquery.com/jquery-3.6.0.js"
+			integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+			crossorigin="anonymous"
+		></script>
+		<script src="./scripts/main.js"></script>
+		<title>GNews</title>
+	</head>
+	<body>
+		<header>
+			<div class="top-nav">
+				<div class="container">
+					<div class="row">
+						<div class="col col-dt-6 col-tb-6 row contact text-center">
+							<p class="email">
+								<i class="fa-solid fa-envelope"></i>
+								letuanbao27121996@gmail.com
+							</p>
+							<p class="phone">
+								<i class="fa-solid fa-phone"></i>
+								0379496909
+							</p>
+						</div>
+						<div class="col col-dt-6 col-tb-6 row menu">
+							<div class="tab-menu text-center">
+								<a href="#">About</a>
+								<a href="#">Privacy</a>
+								<a href="#">Terms</a>
+								<a href="#">Contact</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="brand-nav">
+				<div class="container">
+					<div class="row">
+						<div class="col col-dt-3 col-tb-3">
+							<div class="logo text-center">
+								<i class="fa-solid fa-earth-asia"></i>
+								GNews
+							</div>
+						</div>
+						<div class="col col-dt-6 col-tb-6">
+							<div class="image">
+								<a href="#"><img src="./assets/img/news.jpg" alt="" /></a>
+							</div>
+						</div>
+						<div class="col col-dt-3 col-tb-3">
+							<div class="search text-center">
+								<input type="text" />
+								<button id="search-btn" class="search-btn">
+									<i class="fa-solid fa-magnifying-glass"></i>
+								</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<nav id="main-nav" class="main-nav">
+				<div class="container">
+					<div class="main-nav__top">
+						<a href="#">Menu</a>
+						<button><i id="menuBtn" class="fa-solid fa-bars"></i></button>
+					</div>
+					<div id="navbar" class="navbar">
+						<a href="#" class="active">Home</a>
+						<a href="#">Sports</a>
+						<a href="#">Financial</a>
+						<a href="#">Contact Us</a>
+					</div>
+					<div class="social-media">
+						<a href="#"><i class="fa-brands fa-twitter"></i></a>
+						<a href="#"><i class="fa-brands fa-facebook"></i></a>
+						<a href="#"><i class="fa-brands fa-linkedin"></i></a>
+						<a href="#"><i class="fa-brands fa-instagram-square"></i></a>
+						<a href="#"><i class="fa-brands fa-youtube"></i></a>
+					</div>
+				</div>
+			</nav>
+		</header>
+		<main>
+			<div class="modal" id="modal">
+				<div id="pop-up" class="pop-up">
+					<div class="pop-up__search">
+						<label for="search__input">Search</label>
+						<input
+							type="text"
+							id="search__input"
+							placeholder="Search..."
+							autocomplete="off"
+							name="search_input"
+						/>
+						<br />
+						<select name="language" id="language">
+							<option value="language">Choose language</option>
+							<option value="ar">Arabic</option>
+							<option value="en">English</option>
+							<option value="ja">Japanese</option>
+							<option value="fr">French</option>
+						</select>
+						<br />
+						<button id="modal-search" class="search-btn">Search</button>
+					</div>
+					<i id="close-btn" class="fa-solid fa-rectangle-xmark close"></i>
+				</div>
+			</div>
+			<div class="loader"></div>
+			<section id="top-news" class="container"></section>
+			<footer>
+				<div class="footer-menu">
+					<div class="container">
+						<div class="row">
+							<div class="in-touch col col-tb-6 col-dt-6">
+								<h3 class="title">Get In Touch</h3>
+								<div class="contact-infor">
+									<p>
+										<i class="fa-solid fa-location-pin"></i>
+										688 Lach Tray,Ngo Quyen,Hai Phong,VN
+									</p>
+									<p>
+										<i class="fa-solid fa-envelope-circle-check"></i>
+										letuanbao27121996@gmail.com
+									</p>
+									<p>
+										<i class="fa-solid fa-phone"></i>
+										0376868968
+									</p>
+								</div>
+							</div>
+							<div class="news col col-tb-6 col-dt-6">
+								<h3 class="title">Mail me</h3>
+								<div class="news-letter">
+									<p>
+										This is my assignment for Javascript subject in CCDN
+										series.I tried to make it look better i can so it still not
+										good at all. if you have any advice, please help me to
+										improve this by contact me by emailing
+									</p>
+									<form>
+										<input type="email" placeholder="Email" />
+										<button type="button" class="button">Submit</button>
+									</form>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="footer-terms">
+					<div class="container">
+						<div class="terms__menu">
+							<a href="#">Privacy Policy</a>
+							<a href="#">Cookie</a>
+							<a href="#">Accessibility help</a>
+							<a href="#"> Advertise with us</a>
+							<a href="#"> Contact us</a>
+						</div>
+					</div>
+				</div>
+
+				<div class="footer-bottom">
+					<div class="container">
+						<div class="row content">
+							<div class="col col-tb-6">
+								<p class="first">Copyright &copy;.All rights reserved.</p>
+							</div>
+							<div class="col col-tb-6">
+								<p class="second">Made by <em>Le Tuan Bao</em></p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</footer>
+		</main>
+	</body>
+</html>
